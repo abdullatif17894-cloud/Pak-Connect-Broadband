@@ -62,8 +62,9 @@ function renderCard(app) {
 
   const docs = Object.keys(DOC_LABELS)
     .map((key) => {
-      const url = app.documents && app.documents[key];
-      if (!url) return `<span class="doc-missing">${DOC_LABELS[key]}: not provided</span>`;
+      const hasDoc = app.documents && app.documents[key];
+      if (!hasDoc) return `<span class="doc-missing">${DOC_LABELS[key]}: not provided</span>`;
+      const url = `/api/staff/documents/${app.applicationId}/${key}`;
       return `<a class="doc-link" href="${url}" target="_blank" rel="noopener">${DOC_LABELS[key]} ↗</a>`;
     })
     .join('');
