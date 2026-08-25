@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Apply for New Connection — PakConnect Broadband</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="apply.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">PC</span>
+        <div class="brand-text">
+          <span class="brand-name">PakConnect</span>
+          <span class="brand-tag">Broadband</span>
+        </div>
+      </a>
+      <a href="index.html" class="btn btn-ghost nav-cta">&larr; Back to Home</a>
+    </div>
+  </header>
+
+  <section class="apply-hero">
+    <div class="container">
+      <h1>Apply for a New Connection</h1>
+      <p>Fill in your details, choose a package, and upload your documents. We'll review and forward your application to PTCL.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container apply-layout">
+
+      <form id="applyForm" class="apply-form" novalidate>
+
+        <div class="form-card">
+          <h3>1. Your Details</h3>
+          <div class="field-grid">
+            <label class="field">
+              <span>Full Name *</span>
+              <input type="text" name="fullName" required placeholder="e.g. Abdul Latif" />
+            </label>
+            <label class="field">
+              <span>Mobile Number *</span>
+              <input type="tel" name="mobile" required placeholder="03XXXXXXXXX" />
+            </label>
+            <label class="field field-full">
+              <span>Email Address *</span>
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label class="field field-full">
+              <span>Installation Address *</span>
+              <textarea name="address" required rows="3" placeholder="House / Street, Area, City"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>2. Choose Package</h3>
+          <div class="field-grid">
+            <label class="field field-full">
+              <span>Connection Type *</span>
+              <select name="connectionType" id="connectionType" required>
+                <option value="">Select connection type</option>
+                <option value="fiber">Fiber / DSL Internet</option>
+                <option value="copper">Copper Cable Fixed Line</option>
+              </select>
+            </label>
+            <label class="field field-full">
+              <span>Package *</span>
+              <select name="packageId" id="packageId" required>
+                <option value="">Select connection type first</option>
+              </select>
+            </label>
+          </div>
+          <div id="pkgSummary" class="pkg-summary" hidden></div>
+        </div>
+
+        <div class="form-card">
+          <h3>3. Upload Documents</h3>
+          <p class="form-note">Clear photos or scans only — PDF, JPG, or PNG, up to 10MB each.</p>
+
+          <div class="upload-field">
+            <label>
+              <span>CNIC / ID Card or Passport *</span>
+              <input type="file" name="idDocument" id="idDocument" accept=".pdf,.jpg,.jpeg,.png" required />
+            </label>
+            <div id="cnicStatus" class="cnic-status" hidden></div>
+          </div>
+
+          <div class="upload-field">
+            <label>
+              <span>Utility Bill *</span>
+              <input type="file" name="utilityBill" accept=".pdf,.jpg,.jpeg,.png" required />
+            </label>
+          </div>
+
+          <div class="upload-field">
+            <label>
+              <span>SOF Form *</span>
+              <input type="file" name="sofForm" accept=".pdf,.jpg,.jpeg,.png" required />
+            </label>
+          </div>
+
+          <div class="upload-field">
+            <label>
+              <span>Govt. / NTC NOC Letter (if applicable)</span>
+              <input type="file" name="ntcLetter" accept=".pdf,.jpg,.jpeg,.png" />
+            </label>
+          </div>
+        </div>
+
+        <div id="formError" class="form-error" hidden></div>
+
+        <button type="submit" id="submitBtn" class="btn btn-primary btn-lg btn-block">
+          Submit Application
+        </button>
+      </form>
+
+      <aside class="apply-sidebar">
+        <div class="sidebar-card">
+          <h4>What happens next?</h4>
+          <ol>
+            <li>We review your details and documents</li>
+            <li>Our AI assistant checks your CNIC is valid and unexpired</li>
+            <li>We forward your application to PTCL</li>
+            <li>PTCL schedules your installation</li>
+          </ol>
+        </div>
+        <div class="sidebar-card sidebar-note">
+          <h4>Note</h4>
+          <p>PakConnect Broadband is an authorized connection partner. We are not PTCL — your application is reviewed by us and forwarded to PTCL for processing.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section success-section" id="successSection" hidden>
+    <div class="container success-box">
+      <div class="success-icon">✓</div>
+      <h2>Application Submitted!</h2>
+      <p id="successMessage">Your application has been received. We'll review it and forward it to PTCL shortly.</p>
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+  </section>
+
+  <script src="apply.js"></script>
+</body>
+</html>

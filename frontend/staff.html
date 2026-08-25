@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Staff Dashboard — PakConnect Broadband</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="staff.css">
+</head>
+<body class="staff-body">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">PC</span>
+        <div class="brand-text">
+          <span class="brand-name">PakConnect</span>
+          <span class="brand-tag">Staff Dashboard</span>
+        </div>
+      </a>
+      <button id="refreshBtn" class="btn btn-ghost">Refresh</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <p class="dash-note">Applications submitted through the website. Move each one forward with its status button once reviewed.</p>
+      <div id="appsWrap" class="apps-wrap">
+        <p class="loading">Loading applications…</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="staff.js"></script>
+</body>
+</html>

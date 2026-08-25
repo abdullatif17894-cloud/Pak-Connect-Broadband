@@ -1,0 +1,149 @@
+.apply-hero {
+  background: linear-gradient(180deg, #0b1f3a 0%, #0f2a4d 100%);
+  color: white;
+  padding: 56px 0 48px;
+  text-align: center;
+}
+.apply-hero h1 { color: white; font-size: 34px; margin-bottom: 10px; }
+.apply-hero p { color: #c3d0e6; font-size: 15.5px; max-width: 560px; margin: 0 auto; }
+
+.apply-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+  align-items: start;
+}
+
+.form-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+.form-card h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.field { display: flex; flex-direction: column; gap: 7px; }
+.field-full { grid-column: 1 / -1; }
+.field span { font-size: 13.5px; font-weight: 600; color: var(--navy); }
+.field input, .field select, .field textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  padding: 11px 13px;
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  background: #fbfcfe;
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  background: white;
+}
+.field textarea { resize: vertical; font-family: inherit; }
+
+.pkg-summary {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: #eef4ff;
+  border: 1px solid #cddffb;
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--navy);
+}
+.pkg-summary strong { color: var(--blue); }
+
+.form-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.upload-field {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed var(--border);
+}
+.upload-field:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.upload-field label { display: flex; flex-direction: column; gap: 7px; }
+.upload-field span { font-size: 13.5px; font-weight: 600; color: var(--navy); }
+.upload-field input[type="file"] {
+  font-size: 13.5px;
+  padding: 9px 0;
+}
+
+.cnic-status {
+  margin-top: 10px;
+  padding: 10px 13px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.cnic-status.checking { background: #fff7e0; color: #8a6900; }
+.cnic-status.ok { background: #e4f7ee; color: #0f7a4c; }
+.cnic-status.expired { background: #fde8e8; color: #b42318; }
+
+.form-error {
+  background: #fde8e8;
+  color: #b42318;
+  padding: 13px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.btn-block { width: 100%; }
+
+.apply-sidebar { position: sticky; top: 90px; display: flex; flex-direction: column; gap: 18px; }
+.sidebar-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.sidebar-card h4 { font-size: 15px; margin-bottom: 12px; }
+.sidebar-card ol { padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+.sidebar-card ol li { font-size: 13.5px; color: var(--text-muted); }
+.sidebar-note { background: #f6f8fb; }
+.sidebar-note p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+.success-section { padding: 90px 0; }
+.success-box {
+  max-width: 460px;
+  text-align: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 48px 36px;
+}
+.success-icon {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--blue));
+  color: white;
+  font-size: 30px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+}
+.success-box h2 { margin-bottom: 12px; }
+.success-box p { color: var(--text-muted); margin-bottom: 24px; font-size: 14.5px; }
+
+@media (max-width: 860px) {
+  .apply-layout { grid-template-columns: 1fr; }
+  .field-grid { grid-template-columns: 1fr; }
+  .apply-sidebar { position: static; }
+}
