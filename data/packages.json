@@ -1,0 +1,112 @@
+{
+  "businessName": "PakConnect Broadband",
+  "tagline": "PTCL Authorized Connection Partner",
+  "fiber": {
+    "technology": "Fiber / DSL Internet",
+    "installationFee": null,
+    "installationFeeNote": "TODO: confirm fiber installation fee amount",
+    "plans": [
+      {
+        "id": "fiber-10",
+        "speed": "Upto 10 Mbps",
+        "price": 2999,
+        "minutes": "100 Free All Net Minutes",
+        "features": [
+          "Upto 10 Mbps speed",
+          "100 Free All Net Minutes",
+          "Stream quality videos",
+          "Shoq TV & App Included in package",
+          "Internet Bundle Prices Are Inclusive Of All Taxes"
+        ]
+      },
+      {
+        "id": "fiber-20",
+        "speed": "Upto 20 Mbps",
+        "price": 3299,
+        "minutes": "300 Free All Net Minutes",
+        "features": [
+          "Upto 20 Mbps speed",
+          "300 Free All Net Minutes",
+          "Stream quality videos",
+          "Shoq TV & App Included in package",
+          "Internet Bundle Prices Are Inclusive Of All Taxes"
+        ]
+      },
+      {
+        "id": "fiber-30",
+        "speed": "Upto 30 Mbps",
+        "price": 3999,
+        "minutes": "300 Free All Net Minutes",
+        "features": [
+          "Upto 30 Mbps speed",
+          "300 Free All Net Minutes",
+          "Stream quality videos",
+          "Shoq TV & App Included in package",
+          "Internet Bundle Prices Are Inclusive Of All Taxes"
+        ]
+      },
+      {
+        "id": "fiber-50",
+        "speed": "Upto 50 Mbps",
+        "price": 6299,
+        "minutes": "300 Free All Net Minutes",
+        "features": [
+          "Upto 50 Mbps speed",
+          "300 Free All Net Minutes",
+          "Stream quality videos",
+          "Shoq TV & App Included in package",
+          "Internet Bundle Prices Are Inclusive Of All Taxes"
+        ]
+      },
+      {
+        "id": "fiber-100",
+        "speed": "Upto 100 Mbps",
+        "price": 10999,
+        "minutes": "300 Free All Net Minutes",
+        "features": [
+          "Upto 100 Mbps speed",
+          "300 Free All Net Minutes",
+          "Stream quality videos",
+          "Shoq TV & App Included in package",
+          "Internet Bundle Prices Are Inclusive Of All Taxes"
+        ]
+      }
+    ]
+  },
+  "copper": {
+    "technology": "Copper Cable Fixed Line Internet",
+    "installationFee": 3500,
+    "plans": [
+      { "id": "copper-4", "speed": "4 Mbps", "price": null, "priceNote": "TODO: confirm monthly price" },
+      { "id": "copper-6", "speed": "6 Mbps", "price": null, "priceNote": "TODO: confirm monthly price" },
+      { "id": "copper-8", "speed": "8 Mbps", "price": null, "priceNote": "TODO: confirm monthly price" },
+      { "id": "copper-10", "speed": "10 Mbps", "price": null, "priceNote": "TODO: confirm monthly price" }
+    ]
+  },
+  "requiredDocuments": [
+    {
+      "id": "idDocument",
+      "label": "CNIC / ID Card or Passport",
+      "description": "Valid, unexpired CNIC (front & back) or Passport.",
+      "required": true
+    },
+    {
+      "id": "utilityBill",
+      "label": "Utility Bill",
+      "description": "Recent electricity/gas bill as proof of installation address.",
+      "required": true
+    },
+    {
+      "id": "sofForm",
+      "label": "SOF Form",
+      "description": "Completed Subscriber/Source-of-Funds form as required by PTCL.",
+      "required": true
+    },
+    {
+      "id": "ntcLetter",
+      "label": "Government / NTC NOC Letter",
+      "description": "Required for government/restricted areas, if applicable.",
+      "required": false
+    }
+  ]
+}
