@@ -152,8 +152,8 @@ form.addEventListener('submit', async (e) => {
       throw new Error(result.error || 'Something went wrong. Please try again.');
     }
 
+    document.querySelector('.apply-hero').hidden = true;
     document.querySelector('.apply-layout').closest('.section').hidden = true;
-    document.getElementById('applyForm').closest('.apply-hero').hidden = true;
     const successSection = document.getElementById('successSection');
     successSection.hidden = false;
     document.getElementById('successMessage').textContent =
